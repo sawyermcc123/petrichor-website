@@ -3,181 +3,120 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Petrichor Strategies helps communities move from resilience planning to practical, fundable projects and implementation.">
+  <meta name="description" content="Petrichor Strategies helps communities move from resilience planning to practical projects, funding pathways, and implementation.">
   <title>Petrichor Strategies | From Plan to Place</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Condensed:wght@400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="#home" aria-label="Petrichor Strategies home">
-      <img src="petrichor-logo.png" alt="Petrichor Strategies">
-    </a>
-    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">MENU</button>
-    <nav id="site-nav">
-      <a href="#work">What we do</a>
-      <a href="#approach">Approach</a>
-      <a href="#experience">Experience</a>
-      <a href="#about">About</a>
-      <a class="nav-contact" href="#contact">Contact</a>
-    </nav>
-  </header>
+<header class="site-header">
+  <a class="brand" href="#home" aria-label="Petrichor Strategies home"><img src="assets/petrichor-logo.png" alt="Petrichor Strategies"></a>
+  <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">MENU</button>
+  <nav id="site-nav">
+    <a href="#work">What we do</a><a href="#approach">Approach</a><a href="#experience">Experience</a><a href="#about">About</a><a class="nav-contact" href="#contact">Contact</a>
+  </nav>
+</header>
+<main>
+  <section id="home" class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">RESILIENCE / DESIGN / IMPLEMENTATION</p>
+      <h1>FROM PLAN<br>TO <span>PLACE.</span></h1>
+      <p class="lede">Petrichor Strategies helps communities turn resilience goals, local knowledge, and existing plans into practical projects that prepare places for a changing climate.</p>
+      <div class="hero-actions"><a class="button primary" href="#work">Explore the work <b>↘</b></a><a class="text-link" href="#contact">Start a conversation →</a></div>
+    </div>
+    <div class="hero-image">
+      <img src="assets/helene-hero.jpg" alt="Aerial view of Hurricane Helene landslide damage near Black Mountain, North Carolina">
+      <svg class="landslide-analysis" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+        <!-- Risk corridor: the landslide is outlined, then connected to homes and roads as one living system. -->
+        <path class="slide-edge edge-left" d="M60 17 C57 27 54 36 51 45 C48 55 45 65 41 75 C37 84 33 91 28 98"/>
+        <path class="slide-edge edge-right" d="M66 18 C64 28 61 38 59 48 C57 58 54 68 50 78 C46 87 42 94 38 100"/>
+        <path class="slide-haze" d="M63 18 C61 28 58 37 55 47 C52 57 49 67 45 77 C41 86 37 93 33 99"/>
 
-  <main>
-    <section id="home" class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow">RESILIENCE / DESIGN / IMPLEMENTATION</p>
-        <h1>FROM PLAN<br>TO <span>PLACE.</span></h1>
-        <p class="lede">Petrichor Strategies helps communities turn resilience goals, local knowledge, and existing plans into practical projects that prepare places for a changing climate.</p>
-        <div class="hero-actions">
-          <a class="button primary" href="#work">Explore the work <b>↘</b></a>
-          <a class="text-link" href="#contact">Start a conversation →</a>
-        </div>
-      </div>
-      <div class="hero-map" aria-label="Cartographic aerial landscape graphic">
-        <img src="USGS LOGO.jpg" alt="Aerial view of Hurricane Helene landslide damage near Black Mountain, North Carolina">
-       
-<svg class="landslide-analysis" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
-<path class="slide-trace"
-  d="M64 48
-     C62 53, 60 57, 61 61
-     C62 66, 59 70, 57 74
-     C55 79, 57 84, 54 90
-     C52 94, 50 97, 49 100" />
+        <!-- Animated network. JS gives every node a small independent drift while redrawing every connection. -->
+        <g class="risk-network">
+          <g class="risk-lines"></g>
+          <g class="risk-nodes">
+            <circle data-node="0" cx="63" cy="19" r="1.05"/>
+            <circle data-node="1" cx="61" cy="28" r="1.00"/>
+            <circle data-node="2" cx="59" cy="36" r="1.12"/>
+            <circle data-node="3" cx="56" cy="45" r="1.00"/>
+            <circle data-node="4" cx="53" cy="54" r="1.10"/>
+            <circle data-node="5" cx="50" cy="63" r="1.02"/>
+            <circle data-node="6" cx="47" cy="71" r="1.12"/>
+            <circle data-node="7" cx="43" cy="80" r="1.02"/>
+            <circle data-node="8" cx="39" cy="89" r="1.10"/>
+            <circle data-node="9" cx="35" cy="97" r="1.02"/>
+            <circle data-node="10" cx="37" cy="41" r="1.05"/>
+            <circle data-node="11" cx="33" cy="58" r="1.05"/>
+            <circle data-node="12" cx="74" cy="66" r="1.05"/>
+            <circle data-node="13" cx="25" cy="89" r="1.05"/>
+            <circle data-node="14" cx="19" cy="97" r="1.05"/>
+            <circle data-node="15" cx="60" cy="98" r="1.05"/>
+          </g>
+        </g>
+      </svg>
+      <div class="map-label">FIELD / 001<br>BLACK MOUNTAIN, NC</div>
+    </div>
+  </section>
 
-<circle class="analysis-node node-a" cx="64" cy="48" r="1.4"/>
-<circle class="analysis-node node-b" cx="60" cy="67" r="1.4"/>
-<circle class="analysis-node node-c" cx="54" cy="88" r="1.4"/>
-</svg>
+  <section class="why-section">
+    <p class="section-id">01 / WHY PETRICHOR</p>
+    <div><h2>PLANS SET<br>THE DIRECTION.<br><em>IMPLEMENTATION</em><br>MOVES IT FORWARD.</h2></div>
+    <div class="section-copy"><p>Communities already hold enormous knowledge—in residents, staff, plans, infrastructure, landscapes, and lived experience.</p><p>Petrichor brings those pieces together and turns them into practical pathways toward implementation.</p></div>
+  </section>
 
-<div class="map-label">SYSTEM / 001<br>PEOPLE + PLACE + POLICY</div>
-      </div>
-    </section>
+  <section id="work" class="work-section">
+    <div class="section-heading">
+      <p class="section-id">02 / WHAT WE DO</p>
+      <h2>UNDERSTAND THE PLACE.<br>THEN DECIDE<br>WHAT COMES NEXT.</h2>
+      <div class="section-copy"><p>We begin by understanding how a place actually works—its landscape, infrastructure, communities, institutions, risks, and existing plans.</p><p>That broader view helps identify the most useful next step: education, design, funding, coordination, or a physical project. The same answer does not fit every place.</p><p class="upe-note">INFORMED BY URBAN POLITICAL ECOLOGY / PLACE-BASED SYSTEMS THINKING</p></div>
+    </div>
+    <div class="service-list">
+      <article><span>01</span><h3>Resilience Strategy</h3><p>Understand the landscape, community priorities, existing plans, risks, and systems shaping a place.</p></article>
+      <article><span>02</span><h3>Design + Project Development</h3><p>Translate local needs and knowledge into physical strategies, project concepts, and actionable next steps.</p></article>
+      <article><span>03</span><h3>Mapping + Analysis</h3><p>Use spatial data to reveal relationships, vulnerabilities, patterns, and opportunities.</p></article>
+      <article><span>04</span><h3>Funding + Implementation</h3><p>Connect priorities to grants, partners, programs, phasing, and practical pathways forward.</p></article>
+      <article><span>05</span><h3>Disaster Recovery</h3><p>Help communities understand what happened, what is needed, and what can come next.</p></article>
+    </div>
+  </section>
 
-    <section class="gap-section">
-      <p class="section-id">01 / WHY PETRICHOR</p>
-      <div>
-        <h2>THE PLAN ISN'T<br>THE PROBLEM.<br><em>THE GAP IS.</em></h2>
-      </div>
-      <div class="gap-copy">
-        <p>Communities already hold enormous amounts of knowledge—in residents, staff, plans, infrastructure, landscapes, and lived experience.</p>
-        <p>Petrichor helps identify the missing connections between those systems and turn them into opportunities for resilience.</p>
-      </div>
-    </section>
+  <section id="approach" class="approach-section">
+    <div class="approach-title"><p class="section-id light">03 / HOW WE THINK</p><h2>SEE THE WHOLE SYSTEM.</h2></div>
+    <div class="system-row">
+      <article><div class="system-top"><b>PEOPLE</b><span>01</span></div><p>Who is this for? Local knowledge, lived experience, institutions, vulnerability, and capacity.</p></article>
+      <article><div class="system-top"><b>PLACE</b><span>02</span></div><p>What can work here? Landscape, infrastructure, development patterns, hazards, and physical systems.</p></article>
+      <article><div class="system-top"><b>POLICY</b><span>03</span></div><p>What has the community already committed to? Plans, regulations, priorities, and requirements.</p></article>
+      <div class="gap-bridge" aria-label="The gap: a missing connection between systems"><div class="gap-label">THE GAP <span>04</span></div><div class="bridge-mark"><i></i><span></span><i></i></div><p>Where systems are not connecting yet.</p></div>
+      <article><div class="system-top"><b>IMPLEMENTATION</b><span>05</span></div><p>Projects, design strategies, funding pathways, partnerships, and next steps.</p></article>
+    </div>
+    <div class="bridge-caption">PETRICHOR WORKS AT THE CONNECTION.</div>
+    <div class="process"><span>READ</span><i>→</i><span>LISTEN</span><i>→</i><span>MAP</span><i>→</i><span>DESIGN</span><i>→</i><span>FUND</span><i>→</i><span>IMPLEMENT</span></div>
+  </section>
 
-    <section id="work" class="work-section">
-      <div class="section-heading">
-        <p class="section-id">02 / WHAT WE DO</p>
-        <h2>MOVE GOOD IDEAS<br>INTO THE REAL WORLD.</h2>
-        <p>We work between planning and implementation—where strategy becomes a project, a funding pathway, a design intervention, or a clear next step.</p>
-      </div>
+  <section id="experience" class="experience-section">
+    <p class="section-id">04 / SELECTED EXPERIENCE</p>
+    <div class="experience-intro"><h2>SELECTED<br>EXPERIENCE.</h2><p>Petrichor is built on experience across disaster recovery, reconstruction, urban morphology, community planning, mapping, and implementation. The work below reflects founder experience prior to and alongside the practice.</p></div>
+    <div class="project-grid">
+      <article class="project"><div class="project-no">PRJ / 001</div><div class="project-image"><img src="assets/helene-field.png" alt="Road closure and damaged roadway in Western North Carolina after Hurricane Helene"></div><p class="project-type">DISASTER RECOVERY / WESTERN NORTH CAROLINA</p><h3>Hurricane Helene Recovery</h3><p>Field-based research across Western North Carolina examining local-first recovery, logistics, unmet needs, and the systems shaping long-term resilience.</p></article>
+      <article class="project"><div class="project-no">PRJ / 002</div><div class="project-image"><img src="assets/makariv-map.png" alt="Reconstruction planning map for Makariv, Ukraine"></div><p class="project-type">RECOVERY + URBAN DESIGN / MAKARIV, UKRAINE</p><h3>Post-War Reconstruction</h3><p>Reconstruction planning, stakeholder analysis, mapping, and recovery frameworks supporting a place-based vision for Makariv.</p></article>
+      <article class="project"><div class="project-no">PRJ / 003</div><div class="project-image"><img src="assets/mexico-field.png" alt="Street-level urban morphology field observation in Hidalgo, Mexico"></div><p class="project-type">URBAN MORPHOLOGY / HIDALGO, MEXICO</p><h3>Housing Morphology Studies</h3><p>Field observation and measurement of housing, development patterns, streets, setbacks, infrastructure, and urban form in Pachuca and Tizayuca.</p></article>
+      <article class="project"><div class="project-no">PRJ / 004</div><div class="project-image"><img src="assets/fema-montana.png" alt="River and infrastructure landscape in Montana during disaster recovery work"></div><p class="project-type">FEMA / INTERAGENCY RECOVERY COORDINATION</p><h3>Community Planning + Recovery</h3><p>Community planning and interagency recovery coordination following federally declared disasters, including the 2022 Montana severe storms and flooding mission.</p></article>
+    </div>
+    <p class="project-future">CASE STUDIES / PROJECT PAGES COMING NEXT</p>
+  </section>
 
-      <div class="service-list">
-        <article>
-          <span>01</span>
-          <h3>Resilience Strategy</h3>
-          <p>Understand risk, community priorities, existing plans, and the systems shaping a place.</p>
-        </article>
-        <article>
-          <span>02</span>
-          <h3>Design + Project Development</h3>
-          <p>Translate needs into physical strategies, project concepts, and implementation-ready ideas.</p>
-        </article>
-        <article>
-          <span>03</span>
-          <h3>Mapping + Analysis</h3>
-          <p>Use spatial data to reveal relationships, vulnerabilities, opportunities, and gaps.</p>
-        </article>
-        <article>
-          <span>04</span>
-          <h3>Funding + Implementation</h3>
-          <p>Connect priorities to grants, partners, programs, phasing, and practical next steps.</p>
-        </article>
-        <article>
-          <span>05</span>
-          <h3>Disaster Recovery</h3>
-          <p>Help communities understand what happened, what is needed, and what can come next.</p>
-        </article>
-      </div>
-    </section>
+  <section id="about" class="about-section">
+    <div class="about-statement"><p class="section-id">05 / ABOUT</p><h2>RECOVERY CAN BUILD<br>SOMETHING <span>STRONGER.</span></h2></div>
+    <div class="about-copy"><p class="big">Petrichor Strategies is a resilience consultancy and design practice founded by Sawyer McCarley.</p><p>The practice connects planning, design, funding, infrastructure, public policy, and lived experience—helping communities understand the larger system and build a clearer path from intention to implementation.</p><blockquote>“Extreme weather can expose weaknesses that communities have lived with for years. Recovery gives us an opportunity—not simply to rebuild, but to address those weaknesses and create stronger, more resilient places.”</blockquote><p>Extreme weather is part of the reality communities must prepare for. Recovery should not only rebuild what was there before; it can address longstanding weaknesses in infrastructure and systems and make places stronger for what comes next.</p></div>
+  </section>
 
-    <section id="approach" class="approach-section">
-      <div class="approach-title">
-        <p class="section-id light">03 / HOW WE THINK</p>
-        <h2>SEE THE<br>WHOLE SYSTEM.</h2>
-      </div>
-      <div class="system-grid">
-        <article><b>PEOPLE</b><span>01</span><p>Who is this for? Local knowledge, lived experience, institutions, vulnerability, and capacity.</p></article>
-        <article><b>PLACE</b><span>02</span><p>What can work here? Landscape, infrastructure, development patterns, hazards, and physical systems.</p></article>
-        <article><b>POLICY</b><span>03</span><p>What has the community already committed to? Plans, regulations, priorities, and requirements.</p></article>
-        <article class="signal"><b>THE GAP</b><span>04</span><p>Where aren't the systems connecting yet—and what becomes possible when they do?</p></article>
-        <article><b>IMPLEMENTATION</b><span>05</span><p>Projects, design strategies, funding pathways, partnerships, and next steps.</p></article>
-      </div>
-      <div class="process">READ <i>→</i> LISTEN <i>→</i> MAP <i>→</i> DESIGN <i>→</i> FUND <i>→</i> IMPLEMENT</div>
-    </section>
-
-    <section id="experience" class="experience-section">
-      <p class="section-id">04 / SELECTED EXPERIENCE</p>
-      <div class="experience-intro">
-        <h2>EXPERIENCE<br>BEHIND THE PRACTICE.</h2>
-        <p>Petrichor is a new practice built on experience across disaster recovery, resilience research, urban design, community engagement, mapping, and implementation. The work below reflects founder experience prior to and alongside the practice.</p>
-      </div>
-      <div class="project-grid">
-        <article class="project">
-          <div class="project-no">PRJ / 001</div>
-          <div class="project-graphic contours"></div>
-          <p class="project-type">DISASTER RECOVERY / WESTERN NORTH CAROLINA</p>
-          <h3>Hurricane Helene Recovery</h3>
-          <p>Field-based research across communities in Western North Carolina examining local-first recovery, logistics, unmet needs, and the systems shaping long-term resilience.</p>
-        </article>
-        <article class="project">
-          <div class="project-no">PRJ / 002</div>
-          <div class="project-graphic nodes"></div>
-          <p class="project-type">CLIMATE + INFRASTRUCTURE / NEW YORK</p>
-          <h3>Rebuild by Design</h3>
-          <p>Research and analysis connecting climate disasters, financial impacts, public infrastructure, and community resilience.</p>
-        </article>
-        <article class="project">
-          <div class="project-no">PRJ / 003</div>
-          <div class="project-graphic grid-map"></div>
-          <p class="project-type">URBAN DESIGN / YUCATÁN</p>
-          <h3>Resilient Urban Design</h3>
-          <p>Design strategy, mapping, and stakeholder charrette work translating local narratives and development goals into a resilient urban framework.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="about" class="about-section">
-      <div class="about-statement">
-        <p class="section-id">05 / ABOUT</p>
-        <h2>STRONGER PLACES<br>REQUIRE <span>CONNECTION.</span></h2>
-      </div>
-      <div class="about-copy">
-        <p class="big">Petrichor Strategies is an emerging resilience consultancy and design practice founded by Sawyer McCarley.</p>
-        <p>The practice grew from a simple observation: communities often know what they need, but the systems around them don't always connect. Planning, design, funding, infrastructure, public policy, and lived experience are frequently treated as separate conversations.</p>
-        <p>Petrichor works in the space between them—helping communities see the larger system, identify what's missing, and build a clearer path from intention to implementation.</p>
-        <blockquote>“I like helping people see the gaps.”</blockquote>
-      </div>
-    </section>
-
-    <section id="contact" class="contact-section">
-      <p class="section-id light">06 / CONTACT</p>
-      <h2>LET'S FIND<br>THE <span>GAP.</span></h2>
-      <div class="contact-bottom">
-        <p>Working through a resilience plan, recovery effort, infrastructure challenge, or project that has struggled to move toward implementation?</p>
-        <a href="mailto:hello@petrichorstrategies.com">START A CONVERSATION →</a>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <span>PETRICHOR STRATEGIES LLC</span>
-    <span>PEOPLE / PLACE / POLICY / IMPLEMENTATION</span>
-    <span>© 2026</span>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+  <section id="contact" class="contact-section">
+    <p class="section-id light">06 / CONTACT</p><h2>WHAT COMES <span>NEXT?</span></h2>
+    <div class="contact-bottom"><p>Have a resilience goal, recovery challenge, or community priority that needs a path toward implementation? Let’s talk about what comes next.</p><a href="mailto:sawyer@petrichorstrategies.com">START A CONVERSATION →</a></div>
+  </section>
+</main>
+<footer><span>PETRICHOR STRATEGIES LLC</span><span>PEOPLE / PLACE / POLICY / IMPLEMENTATION</span><span>© 2026</span></footer>
+<script src="script.js"></script>
+</body></html>
