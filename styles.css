@@ -83,63 +83,65 @@ footer{display:grid;grid-template-columns:1fr 1fr auto;padding:22px 4vw;backgrou
  .contact-bottom{grid-template-columns:1fr;gap:30px}.contact-bottom a{justify-self:start}footer{grid-template-columns:1fr;gap:10px}
  .service-list article{grid-template-columns:12% 88%;gap:8px}.service-list p{grid-column:2}
 }
+/* LANDSLIDE ANALYSIS OVERLAY */
 
-/* PETRICHOR — HERO ANALYTICAL OVERLAY */
-
-.hero-map {
-  position: relative;
-  overflow: hidden;
-}
-
-/* animated landslide trace */
-.hero-map::after {
-  content: "";
+.landslide-analysis {
   position: absolute;
-  z-index: 4;
-
-  top: 48%;
-  left: 58%;
-
-  width: 3px;
-  height: 58%;
-
-  background: linear-gradient(
-    to bottom,
-    transparent 0%,
-    #E75A2C 12%,
-    #E75A2C 88%,
-    transparent 100%
-  );
-
-  transform: rotate(7deg);
-  transform-origin: top center;
-
-  opacity: 0.9;
-
-  animation: petrichor-trace 4.5s ease-in-out infinite;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  pointer-events: none;
 }
 
-@keyframes petrichor-trace {
-  0% {
-    transform: rotate(7deg) scaleY(0);
-    opacity: 0;
-  }
+.slide-trace {
+  fill: none;
+  stroke: var(--orange);
+  stroke-width: 0.55;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 3 2;
+  vector-effect: non-scaling-stroke;
+  opacity: 0.95;
 
-  15% {
-    opacity: 0.9;
-  }
+  stroke-dashoffset: 100;
+  animation: trace-slide 5s linear infinite;
+}
 
-  65% {
-    transform: rotate(7deg) scaleY(1);
-    opacity: 0.9;
-  }
+.analysis-node {
+  fill: var(--orange);
+  stroke: var(--cream);
+  stroke-width: 0.25;
+  vector-effect: non-scaling-stroke;
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: node-pulse 3s ease-in-out infinite;
+}
 
-  85% {
-    opacity: 0.9;
-  }
+.node-b {
+  animation-delay: 0.7s;
+}
 
-  100% {
-    transform: rotate(7deg) scaleY(1);
-    opacity: 0;
+.node-c {
+  animation-delay: 1.4s;
+}
+
+@keyframes trace-slide {
+  from {
+    stroke-dashoffset: 100;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes node-pulse {
+  0%, 100% {
+    opacity: 0.65;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.25);
   }
 }
