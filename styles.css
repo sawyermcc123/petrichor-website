@@ -84,7 +84,6 @@ footer{display:grid;grid-template-columns:1fr 1fr auto;padding:22px 4vw;backgrou
  .service-list article{grid-template-columns:12% 88%;gap:8px}.service-list p{grid-column:2}
 }
 
-
 /* PETRICHOR — HERO ANALYTICAL OVERLAY */
 
 .hero-map {
